@@ -1,0 +1,25 @@
+Use mathematical induction to prove that, for a non-negative integer $n$, 
+\[
+\int^\infty_0 x^ne^{-x} dx = n!.
+\]
+\newline
+Let $P(n)$ be the statement that $\int^{\infty}_0 x^ne^{-x}dx = n!$. $P(0)$ is true since 
+\[
+\int^\infty_0 e^{-x} dx = -e^{-x}\rvert^\infty_0 = 0 - (-1) = 1 = 0!.
+\]
+Now assume $P(k)$ is true for some natural $k$. Now consider $P(k+1)$. We are interested in computing
+\[
+\int^{\infty}_0 x^{k+1}e^{-x}dx.
+\]
+By parts, let $u = x^{k+1}$ so $u' = (k+1)x^k$ and let $v' = e^{-x}$ so $v = -e^{-x}$. Then
+\[
+\int^{\infty}_0 x^{k+1}e^{-x}dx = (-x^{k+1}e^{-x})\rvert^\infty_0 + (k+1)\int^\infty_0 x^ke^{-x}dx.
+\]
+But since we have assumed $P(k)$ is true, this means that this can be simplified to
+\[
+= (-x^{k+1}e^{-x})\rvert^\infty_0 + (k+1)k! = 0 + (k+1)k!
+\]
+\[
+= (k+1)!.
+\]
+Hence $P(k+1)$ is true if $P(k)$ is true. Since $P(k)$ implies $P(k+1)$ and since $P(0)$ is true, $P(n)$ is true for all non-negative integers $n$ by mathematical induction.

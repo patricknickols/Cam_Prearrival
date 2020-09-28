@@ -1,0 +1,42 @@
+Prove that $\sum^N_1 n = \frac{1}{2}N(N+1)$.
+\newline
+Evaluate:
+\begin{enumerate}
+\item the sum of the odd integers from 11 to 99 inclusive.
+\item $\sum_{n=1}^5(3n+2)$
+\item $\sum^N_{n=0}(an+b)$ ($a$ and $b$ are constants)
+\item $\sum_{r=0}^{10}2^r$
+\item $\sum_{n=0}^N ar^{2n}$ ($a$ and $r$ are constants).
+\end{enumerate}
+\begin{proof}
+We have
+\[
+\sum^N_{n=1} n = 1 + 2 + 3 + \hdots + N.
+\]
+This is a sum of $N$ terms. The mean of these terms, since they are consecutive numbers, is the middle term. That is half the $(N+1)^{\text{th}}$ term. So we have a sum of $N$ terms, which have a mean of $\frac{1}{2}(N+1)$. Hence their sum is the product of the mean and the number of terms:
+\[
+\frac{1}{2}N(N+1).
+\]
+\end{proof}
+\begin{enumerate}
+\item
+\[
+\sum_{n=0}^{44}11 + 2n = 45(55) = 2475.
+\]
+\item
+\[
+\sum^{5}_{n=1} (3n+2) = 5 + 8 + 11 + 14 + 17 + 20 = 75.
+\]
+\item
+\[
+\sum^{N}_{n=0}(an+b) = \frac{1}{2}(aN + 2b)(N).
+\]
+\item
+\[
+\sum_{r=0}^{10}2^r = 2^{11} - 1 = 2047.
+\]
+\item
+\[
+\sum^N_{n=0}ar^{2n} = \frac{a(r^{2N} - 1)}{r^2-1}.
+\]
+\end{enumerate}

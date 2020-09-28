@@ -1,0 +1,53 @@
+\begin{enumerate}
+\item
+Determine the real and imaginary parts of 
+\[
+\frac{1+i}{2-i}.
+\]
+\item
+Find the roots of the quadratic equation $z^2 -2z + 2 = 0$. Determine the modulus and argument of each root. Plot the roots of an Argand diagram.
+\end{enumerate}
+\begin{enumerate}
+\item
+\[
+z = \frac{1+i}{2-i}\cdot\frac{2+i}{2+i} = \frac{(1+i)(2+i)}{5}.
+\]
+Hence 
+\[
+\text{Re}(z) = \frac{1}{5}. 
+\]
+\[
+\text{Im}(z) = \frac{3}{5}.
+\]
+\item
+\[
+z = 1 \pm i. 
+\]
+The arguments are $\pi/4$ (positive) and $-\pi/4$ (negative) and the modulus of both is $\sqrt{2}$ so they lie on a circle of radius $\sqrt{2}$ centered at the origin.
+\begin{center}
+	\begin{tikzpicture}
+		\draw [->] (-3.5,0) -- (3.5,0) node [above left]  {$\Re\{z\}$};
+		\draw [->] (0,-3.5) -- (0,3.5) node [below right] {$\Im\{z\}$};
+		\draw (0,0) circle (1.414);
+		\node at (1,1) {\textbullet};
+		\node at (1,-1) {\textbullet};
+		\foreach \n in {-2,-1,1,2,}{%
+			\draw (\n,-3pt) -- (\n,3pt)   node [above] {$\n$};
+			\draw (-3pt,\n) -- (3pt,\n)   node [left] {$\n i$};
+			}
+	\end{tikzpicture}
+\end{center}
+\begin{center}
+	\begin{tikzpicture}
+		\draw [->] (-3.5,0) -- (3.5,0) node [above left]  {$\Re\{z\}$};
+		\draw [->] (0,-3.5) -- (0,3.5) node [below right] {$\Im\{z\}$};
+		\draw (0,0) circle (1.414);
+		\node at (1,1) {\textbullet};
+		\node at (1,-1) {\textbullet};
+		\foreach \n in {-2,-1,1,2,}{%
+			\draw (\n,-3pt) -- (\n,3pt)   node [above] {$\n$};
+			\draw (-3pt,\n) -- (3pt,\n)   node [left] {$\n i$};
+			}
+	\end{tikzpicture}
+\end{center}
+\end{enumerate}
