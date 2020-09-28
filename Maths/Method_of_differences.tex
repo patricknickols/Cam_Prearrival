@@ -1,0 +1,23 @@
+Use partial fractions to sum the series
+\[
+\sum^n_{r=1} \frac{1}{r(r+1)}.
+\]
+\newline
+\[
+\frac{1}{r(r+1)} = \frac{A}{r+1} + \frac{B}{r}.
+\]
+So $Ar + Br + B = 1$. Hence $A+B= 0$ and $B = 1$. So $A = -1$. So
+\[
+\frac{1}{r(r+1)} = \frac{1}{r} - \frac{1}{r+1}
+\]
+and so 
+\[
+\sum^n_{r=1} \frac{1}{r(r+1)} = (\frac{1}{1} - \frac{1}{2}) + (\frac{1}{2} - \frac{1}{3}) + (\frac{1}{3} - \frac{1}{4}) + \hdots + -\frac{1}{n+1}
+\]
+which telescopes and so
+\[
+= 1 - \frac{1}{n+1}
+\]
+\[
+= \frac{n}{n+1}.
+\]

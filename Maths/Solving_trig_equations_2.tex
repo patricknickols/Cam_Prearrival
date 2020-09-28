@@ -1,0 +1,43 @@
+Find the values of $\theta$ in the range $0$ to $2\pi$ which satisfy the equation
+\[
+\cos \theta + \cos 3\theta = \sin \theta + \sin 3\theta.
+\]
+We apply the compound angle identities repeatedly and obtain
+\[
+\cos \theta + \cos\theta\cos(2\theta) -\sin\theta\sin(2\theta) = \sin\theta + \sin\theta\cos(2\theta) + \sin(2\theta)\cos\theta
+\]
+\[
+\iff \cos\theta + \cos\theta(\cos^2\theta-\sin^2\theta) -\sin\theta(2\sin\theta\cos\theta) = \sin\theta + \sin\theta(\cos^2\theta-\sin^2\theta) + \cos\theta(2\sin\theta\cos\theta)
+\]
+\[
+\iff \cos \theta + \cos^3\theta -\cos\theta\sin^2\theta -2\sin^2\theta\cos\theta = \sin\theta + \cos^2\theta\sin\theta -\sin^3\theta + 2\cos^2\theta\sin\theta.
+\]
+Now we try and factor cleverly and look for where we can replace $1-\sin^2\theta$ with $\cos^2\theta$.
+\[
+\cos \theta(1 + \cos^2 \theta - \sin^2\theta -2\sin^2\theta) = \sin\theta + \cos^2\theta\sin\theta - \sin^3\theta + 2\cos^2\theta\sin\theta
+\]
+\[
+\cos \theta(2\cos^2\theta-2\sin^2\theta) = \sin\theta(1 + \cos^2\theta - \sin^2\theta +2\cos^2\theta)
+\]
+\[
+\cos \theta(2\cos^2\theta-2\sin^2\theta) = \sin\theta(4\cos^2\theta)
+\]
+
+Before we divide on both sides by $\cos \theta$, we must check if $\cos \theta$ could be equal to zero. If it were then $\theta = \frac{\pi}{2}$ or $\frac{3\pi}{2}$. If $\theta = \frac{\pi}{2}$, this would mean that $\cos\theta + \cos 3\theta = 0$ while $\sin\theta + \sin3\theta = 0$. Hence $\theta = \frac{\pi}{2}$ is a valid solution. Similarly, checking reveals that so too is $\frac{3\pi}{2}$. Now we can divide:
+
+\[
+2\cos^2\theta - 2\sin^2\theta = 4\sin\theta\cos\theta
+\]
+\[
+2\cos(2\theta) = 2\sin(2\theta)
+\]
+\[
+\cos(2\theta) = \sin(2\theta)
+\]
+\[
+\tan(2\theta) = 1.
+\]
+Hence:
+\[
+\theta = \frac{\pi}{8}, \frac{\pi}{2}, \frac{5\pi}{8}, \frac{9\pi}{8}, \frac{3\pi}{2}, \frac{13\pi}{8}.
+\]

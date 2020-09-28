@@ -1,0 +1,15 @@
+Calculate the derivative of $y = x^2 + 1$ from first principles (i.e. by considering the derivative of a function as the limit of the gradient of a chord).
+\newline
+We do as requested and note that the gradient would be given by the change in $y$ over the change in $x$ where we let the change in $x$ tend very small.
+\[
+\frac{dy}{dx} = \lim_{h \to 0} \frac{[(x+h)^2 + 1] - (x^2 + 1)}{h}
+\]
+\[
+= \lim_{h \to 0} \frac{2xh+h^2}{h}
+\]
+\[
+= \lim_{h \to 0} 2x + h
+\]
+\[
+= 2x.
+\]

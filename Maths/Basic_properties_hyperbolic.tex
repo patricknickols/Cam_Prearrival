@@ -1,0 +1,29 @@
+State the definitions of sinh $x$ and cosh $x$. Prove that
+\[
+\text{cosh}^2x - \text{sinh}^2x = 1 \quad \quad \quad \text{sinh}2x = 2 \text{sinh}x\text{cosh}x
+\]
+\newline
+$\sinh x$ is the odd part of the exponential function and $\cosh x$ is the even part. We thus have
+\[
+\sinh x = \frac{e^x-e^{-x}}{2}
+\]
+\[
+\cosh x = \frac{e^x + e^{-x}}{2}.
+\]
+A simple computation reveals
+\[
+\cosh^2x - \sinh^2x = (\cosh x - \sinh x)(\cosh x + \sinh x)
+\]
+\[
+e^{-x}e^x = 1.
+\]
+Similarly,
+\[
+2\sinh x\cosh x = 2\left(\frac{e^x+e^{-x}}{2}\right)\left(\frac{e^x-e^{-x}}{2}\right) 
+\]
+\[
+= \frac{(e^x+e^{-x})(e^x -e^{-x})}{2}
+\]
+\[
+= \frac{e^{2x} -e^{-2x}}{2} = \sinh 2x.
+\]
